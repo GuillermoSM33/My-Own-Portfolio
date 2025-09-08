@@ -78,18 +78,30 @@ Strong foundation in REST APIs, microservices, CI/CD, and container deployments.
 
             <!-- Desktop Menu -->
             <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
-                <a href="/projects" class="hover:text-blue-600">Projects</a>
-                <a href="/docs" class="hover:text-blue-600">Documentation</a>
+                <a href="/" class="hover:text-blue-600">Projects</a>
+                <a href="/more" class="hover:text-blue-600">Documentation</a>
                 <a href="/videos" class="hover:text-blue-600">Videos</a>
                 <a href="/contact" class="hover:text-blue-600">Contact</a>
             </nav>
 
             <!-- Mobile Menu -->
             <nav id="mobile-menu" class="hidden flex-col gap-3 mt-3 bg-white border rounded-lg shadow-md p-4 md:hidden">
-                <a href="/projects" class="hover:text-blue-600">Projects</a>
-                <a href="/docs" class="hover:text-blue-600">Documentation</a>
-                <a href="/videos" class="hover:text-blue-600">Videos</a>
-                <a href="/contact" class="hover:text-blue-600">Contact</a>
+                <a href="/"
+                    class="block w-full px-4 py-2 text-center rounded-md hover:bg-gray-100 hover:text-blue-600 transition">
+                    Projects
+                </a>
+                <a href="/more"
+                    class="block w-full px-4 py-2 text-center rounded-md hover:bg-gray-100 hover:text-blue-600 transition">
+                    Documentation
+                </a>
+                <a href="/videos"
+                    class="block w-full px-4 py-2 text-center rounded-md hover:bg-gray-100 hover:text-blue-600 transition">
+                    Videos
+                </a>
+                <a href="/contact"
+                    class="block w-full px-4 py-2 text-center rounded-md hover:bg-gray-100 hover:text-blue-600 transition">
+                    Contact
+                </a>
             </nav>
 
             <!-- Slot -->
