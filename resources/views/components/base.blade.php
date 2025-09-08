@@ -80,7 +80,7 @@ Strong foundation in REST APIs, microservices, CI/CD, and container deployments.
             <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
                 <a href="/" class="hover:text-blue-600">Projects</a>
                 <a href="/more" class="hover:text-blue-600">Documentation</a>
-                <a href="/videos" class="hover:text-blue-600">Videos</a>
+                <a href="/video" class="hover:text-blue-600">Videos</a>
                 <a href="/contact" class="hover:text-blue-600">Contact</a>
             </nav>
 
@@ -94,7 +94,7 @@ Strong foundation in REST APIs, microservices, CI/CD, and container deployments.
                     class="block w-full px-4 py-2 text-center rounded-md hover:bg-gray-100 hover:text-blue-600 transition">
                     Documentation
                 </a>
-                <a href="/videos"
+                <a href="/video"
                     class="block w-full px-4 py-2 text-center rounded-md hover:bg-gray-100 hover:text-blue-600 transition">
                     Videos
                 </a>

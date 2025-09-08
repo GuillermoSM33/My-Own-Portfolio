@@ -13,3 +13,7 @@ Route::get('/contact', function(){
 Route::get('/more', function(){
     return view('more');
 })->name('more');
+
+Route::get('/video', function(){
+    return view('video');
+})->name('video');
