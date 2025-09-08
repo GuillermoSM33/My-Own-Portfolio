@@ -12,15 +12,15 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Instal PHP
+      - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.2'
 
-      - name: Instal Dependencys For Composer
+      - name: Install Dependencys For Composer
         run: composer install --no-dev --optimize-autoloader
 
-      - name: Instal Node.js
+      - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
@@ -43,4 +43,8 @@ jobs:
             npm install
             npm run build
             php artisan migrate --force
+             php artisan cache:clear
+            php artisan config:clear
+            php artisan route:clear
+            php artisan view:clear
             php artisan optimize
