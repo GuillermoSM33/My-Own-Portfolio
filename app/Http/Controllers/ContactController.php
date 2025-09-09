@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactFormMail;
+use App\Config\filter;
 
 class ContactController extends Controller
 {
@@ -21,7 +22,7 @@ class ContactController extends Controller
         $email = filter_var($validated['email'], FILTER_SANITIZE_EMAIL);
         $message = strip_tags($validated['message']);
 
-        $blockedWords = ['obscene1','obscene2','offensiveWord'];
+        $blockedWords = config('filter.blocked_words');
         foreach ($blockedWords as $word) {
             if (stripos($message, $word) !== false) {
                 return back()->withErrors(['message' => 'Inappropriate content detected.']);
